@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub|java</title>
+    <link rel="stylesheet" href="./index32.css">
+</head>
+<body>
+       <header class="header">
+<a href="./index28.html">
+        <h1><span>☕</span> EduHub <span>Java</span> Complete</h1></a>
+        <div class="link">
+            <div class="links">
+            <a href="./index29.html">CSS</a>
+            <a href="./index30.html">JS</a>
+            <a href="./index32.html">Java</a>
+            <a href="./index31.html">Python</a>
+            <a href="./index33.html">C++</a>
+            <a href="./index34.html">PhP</a>
+            <a href="./index35.html">SQL</a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="sidebar" class="navbar">
+        <div class="logo"><span>Java</span></div>
+        <div class="menu">
+          <h3>1. Basics & Types</h3>
+            <a href="#variables">Primitives & Variables</a>
+            <a href="#strings">Strings & Casting</a>
+        </div>
+        
+        <div class="menu1">
+          <h3>2. Logic & Collections</h3>
+            <a href="#loops">Loops (For, While)</a>
+            <a href="#arrays">Arrays & ArrayList</a>
+        </div>
+       
+        <div class="menu2">
+           <h3>3. OOP Mastery</h3>
+            <a href="#classes">Classes & Objects</a>
+            <a href="#inheritance">Inheritance & Interface</a>
+        </div>
+        
+        <div class="menu3">
+          <h3>4. Advanced</h3>
+            <a href="#exceptions">Exception Handling</a>
+            <a href="#lambda">Lambda Expressions</a>
+        </div>
+    </nav>
+ <main class="main">
+        <!-- VARIABLES -->
+        <section id="variables" class="section">
+            <h2>Primitives & Variables</h2>
+            <div class="card">
+                <h4>Data Types</h4>
+                <p class="desc">Java is statically typed. Every variable must have a declared type.</p>
+                <pre class="item5">
+<span class="keyword">int</span> myNum = <span class="number">5</span>;<span class="comment"> <br>// Integer</span>
+<span class="keyword">float</span> myFloatNum = <span class="number">5.99f</span>;<span class="comment"> <br>// Floating point</span>
+<span class="keyword">char</span> myLetter = <span class="string">'D'</span>;<span class="comment"> <br>// Character</span>
+<span class="keyword">boolean</span> myBool = <span class="keyword">true</span>;<span class="comment"><br>// Boolean</span>
+<span class="type">String</span> myText = <span class="string">"Hello"</span>;<span class="comment"><br>// String (Object)</span></pre>
+            </div>
+        </section>
+
+        <!-- STRINGS -->
+        <section id="strings" class="section1">
+            <h2>Strings & Casting</h2>
+            <div class="card">
+                <h4>String Methods</h4>
+                <pre class="item4">
+<span class="type">String</span> txt = <span class="string">"EduHub Java"</span>;
+<span class="type">System</span>.out.println <br>(txt.length());     <span class="comment"><br>// 11</span>
+<span class="type">System</span>.out.println <br>(txt.toUpperCase());<span class="comment"><br>// EDUHUB JAVA</span>
+<span class="type">System</span>.out.println <br>(txt.indexOf(<span class="string">"Java"</span>));<br> <span class="comment">// 7</span></pre>
+            </div>
+        </section>
+
+        <!-- LOOPS -->
+        <section id="loops" class="section2">
+            <h2>Loops & Logic</h2>
+            <div class="card">
+                <h4>For-Each Loop</h4>
+                <p class="desc">Commonly used to iterate through arrays or collections.</p>
+                <pre class="item3">
+<span class="type">String</span>[] cars = {<span class="string">"Volvo"</span>, <br><span class="string">"BMW"</span>, <span class="string">"Ford"</span>};
+<span class="keyword">for</span> (<span class="type">String</span> i : cars) { <br>
+  <span class="type">System</span>.out.println(i);
+}</pre>
+            </div>
+        </section>
+
+        <!-- ARRAYS -->
+        <section id="arrays" class="section3">
+            <h2>Collections</h2>
+            <div class="card">
+                <h4>ArrayList (Dynamic)</h4>
+                <pre class="item2">
+<span class="keyword">import</span> java.util.<span class="type">ArrayList</span>;
+
+<span class="type">ArrayList</span>&lt;<br><span class="type">String</span>&gt; list = <span class="keyword">new</span> <span class="type"><br> ArrayList</span>&lt;&gt;();
+list.add(<span class="string">"Java"</span>);
+list.add(<span class="string">"Python"</span>);
+list.remove(<span class="number">0</span>);</pre>
+            </div>
+        </section>
+
+        <!-- OOP -->
+        <section id="classes" class="section4">
+            <h2>OOP Pillars</h2>
+            <div class="card">
+                <h4>Constructors & Methods</h4>
+                <pre class="item1">
+<span class="keyword">public class</span> <br> <span class="type">User</span> {
+  <span class="type">String</span> name; <br>
+
+  <span class="comment">// Constructor</span>
+  <span class="keyword">public</span> <br><span class="type">User</span>(<span class="type">String</span> n) <br> {
+    name = n;
+  }
+
+  <span class="keyword">public void</span> sayHello() { <br>
+    <span class="type">System</span>.out.println(<span class="string">"Hi " <br></span> + name);
+  }
+}</pre>
+            </div>
+        </section>
+
+        <!-- INTERFACES -->
+        <section id="inheritance" class="section5">
+            <h2>Interfaces</h2>
+            <div class="card">
+                <h4>Abstraction</h4>
+                <pre class="item">
+<span class="keyword">interface</span> <span class="type">Animal</span> {
+  <span class="keyword">public void</span> animalSound(); <span class="comment"> <br>// interface method</span>
+}
+
+<span class="keyword">class</span> <span class="type">Pig</span> <span class="keyword"><br> implements</span> <span class="type">Animal</span> {
+  <span class="keyword">public void</span> animalSound() { <br>
+    <span class="type">System</span>.out.println <br>(<span class="string">"Oink Oink"</span>);
+  }
+}</pre>
+            </div>
+        </section>
+
+        <!-- LAMBDA -->
+        <section id="lambda" class="section6">
+            <h2>Lambda Expressions</h2>
+            <div class="card">
+                <h4>Functional Programming</h4>
+                <p class="desc">Added in Java 8 to simplify code syntax.</p>
+                <pre class="item6">
+<span class="type">ArrayList</span>&lt; <br><span class="type">Integer</span>&gt; numbers = <span class="keyword"> <br>new</span> <span class="type">ArrayList</span>&lt;&gt;();
+numbers.add(<span class="number">5</span>);
+numbers.add(<span class="number">9</span>);
+numbers.forEach( (n) -> { <span class="type"><br> System</span>.out.println(n); } );</pre>
+            </div>
+        </section>
+
+        <!-- EXCEPTIONS -->
+        <section id="exceptions" class="section7">
+            <h2>Exception Handling</h2>
+            <div class="card">
+                <h4>Try...Catch</h4>
+                <pre class="item7">
+<span class="keyword">try</span> {
+  <span class="keyword">int</span>[] myNumbers = {<span class="number">1</span>, <br> <span class="number">2</span>, <span class="number">3</span>};
+  <span class="type">System</span>.out.println(myNumbers[ <br><span class="number">10</span>]);
+} <span class="keyword">catch</span> (<span class="type">Exception</span> e) {
+  <span class="type">System</span>.out.println(<span class="string">"Error: <br> Index out of bounds."</span>);
+} <span class="keyword">finally</span> {
+  <span class="type">System</span>.out.println(<span class="string">"Cleanup <br> code here."</span>);
+}</pre>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

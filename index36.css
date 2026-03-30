@@ -1,0 +1,905 @@
+body{
+    padding: 0;
+    background-color: rgb(36, 35, 35);
+    margin: 0  auto;
+}
+.header{
+    padding: 2px;
+    background-color: #3a3939;
+    color: white;
+}
+.header h1{
+    padding: 5px;
+    background-color: hsl(0, 20%, 96%);
+    width: 10vw;
+    margin-left: 20px;
+    position: relative;
+    border-radius: 5px;
+    color: black;
+    text-align:center;
+    font: 20px bold;
+    border: 1px solid darkgrey;
+}
+.header h1:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    box-shadow:  0 0 20px cornflowerblue;
+    transform: scale(1.05) translateY(-5px);
+}
+@media(max-width:600px){
+    .header h1{
+        padding: 5px;
+        width: 40vw;
+        background-color: #918e8e;
+        justify-self: center;
+    }
+}
+.header span{
+    color: #0f38f0;
+    font-weight: 900;
+}
+.header p{
+    text-align: center;
+    font: 20px bold;
+    font-weight: 900;
+}
+.navbar{
+    position: relative;
+    top: 0px;
+    padding: 10px;
+    background-color: rgb(26, 25, 25);
+    justify-items: right;
+}
+.logo{
+    position: relative;
+    top: 5px;
+    font: 20px bold;
+    justify-self: left;
+    background-color:transparent;
+}
+@media(max-width:600px){
+    .logo{
+        position: relative;
+        top: 0px;
+    }
+    .menu a{
+        text-align: center;
+        position: relative;
+        margin-left: 30px;
+    }
+}
+.logo span a{
+    position: relative;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.menu a{
+    position: relative;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    bottom: 10px;
+}
+.menu a:hover{
+    transition: all ease-in 0.3s;
+    cursor:pointer;
+    transform: scale(1.05) translateY(-5px);
+    color: cyan;
+}
+.cooking{
+    padding: 20px;
+    width: 95vw;
+    background-color: #252525;
+    justify-self: center;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+}
+.cooking h2{
+    color: rgb(245, 205, 27);
+    text-align: center;
+    font: 20px bold;
+    font-weight: 900;
+    top: 0px;
+}
+.cooking p{
+    font: 20px bold;
+    color: white;
+    
+}
+.card{
+    position: relative;
+    width: 20vw;
+    height:auto;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    justify-self: left;
+    margin-left: 20px;
+}
+.card h3{
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+.card p{
+    position: relative;
+    margin-left: 10px;
+    font: 17px bold;
+    color: black;
+}
+.image{
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    text-align: center;
+}
+.image img{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 5px 5px 0 0;
+}
+.card:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+.card1{
+    position: absolute;
+    width: 20vw;
+    height:auto;
+    justify-self: center;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    top: 150px;
+}
+.card1:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+.card1 h3{
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+.card1 p{
+    position: relative;
+    margin-left: 10px;
+    font: 17px bold;
+    color: black;
+}
+.image1{
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    text-align: center;
+}
+.image1 img{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 5px 5px 0 0;
+}
+
+.card2{
+    position: absolute;
+    width: 20vw;
+    height:auto;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    justify-self: right;
+    margin-right: 20px;
+    top: 150px;
+}
+.card2 h3{
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+.card2 p{
+    position: relative;
+    margin-left: 10px;
+    font: 17px bold;
+    color: black;
+}
+.image2{
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    text-align: center;
+}
+.image2 img{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 5px 5px 0 0;
+}
+.card2:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+.card3{
+    position: relative;
+    width: 20vw;
+    height:auto;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    top: 10px;
+    justify-self: left;
+    margin-left: 20px;
+}
+.card3 h3{
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+.card3 p{
+    position: relative;
+    margin-left: 10px;
+    font: 17px bold;
+    color: black;
+}
+.image3{
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    text-align: center;
+}
+.image3 img{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 5px 5px 0 0;
+}
+.card3:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+.sports{
+    padding: 20px;
+    width:95vw;
+    background-color:#1a1919;
+    justify-self: center;
+    position: relative;
+    top: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.sports h2{
+    color: rgb(245, 205, 27);
+    text-align: center;
+    font: 20px bold;
+    font-weight: 900;
+    top: 0px;
+}
+.sports p{
+    font: 20px bold;
+    color: white;
+    
+}
+.card4{
+    position: relative;
+    width: 20vw;
+    height:auto;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    top: 0px;
+    justify-self: left;
+    margin-left: 20px;
+}
+.card4 h3{
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+.card4 p{
+    position: relative;
+    margin-left: 10px;
+    font: 17px bold;
+    color: black;
+}
+.image4{
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    text-align: center;
+}
+.image4 img{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 5px 5px 0 0;
+}
+.card4:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+
+.card5{
+    position: absolute;
+    width: 20vw;
+    height:auto;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    top: 150px;
+    justify-self: center;
+}
+.card5 h3{
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+.card5 p{
+    position: relative;
+    margin-left: 10px;
+    font: 17px bold;
+    color: black;
+}
+.image5{
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    text-align: center;
+}
+.image5 img{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 5px 5px 0 0;
+}
+.card5:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+
+.card6{
+    position: absolute;
+    width: 20vw;
+    height:auto;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    top: 150px;
+    justify-self: right;
+    margin-right: 20px;
+}
+.card6 h3{
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+.card6 p{
+    position: relative;
+    margin-left: 10px;
+    font: 17px bold;
+}
+.image6{
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    text-align: center;
+}
+.image6 img{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 5px 5px 0 0;
+}
+.card6:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+
+.card7{
+    position: relative;
+    width: 20vw;
+    height:auto;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    top: 10px;
+    justify-self: left;
+    margin-left: 20px;
+}
+.card7 h3{
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+.card7 p{
+    position: relative;
+    margin-left: 10px;
+    font: 17px bold;
+}
+.image7{
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    text-align: center;
+}
+.image7 img{
+    width: 20vw;
+    height: 30vh;
+    border-radius: 5px 5px 0 0;
+}
+.card7:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+.profit{
+    padding: 20px;
+    width:95vw;
+    background-color:#252525;
+    justify-self: center;
+    position: relative;
+    top: 20px;
+    border-radius: 5px 5px 0 0;
+}
+.profit h2{
+    color: rgb(245, 205, 27);
+    text-align: center;
+    font: 20px bold;
+    font-weight: 900;
+    top: 0px;
+}
+.profit p{
+    font: 20px bold;
+    color: white;
+}
+.card8{
+    position: relative;
+    width: 30vw;
+    height: auto;
+    justify-self: left;
+    margin-left: 100px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+}
+.image8{
+    text-align: center;
+    position: relative;
+}
+.image8 img{
+    width: 30vw;
+    height: 40vh;
+    opacity: 1;
+    border-radius: 5px 5px  0 0;
+}
+.card8 h3{
+    color: wheat;
+    font-weight: 900;
+    font: 20px bold;
+    text-align: center;
+}
+.card8 strong{
+    color:#000000;
+    margin-left: 0px;
+}
+.profit-badge1{
+    position: relative;
+    bottom: 10px;
+    padding: 10px;
+    margin-left: 60px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    text-shadow:  0 0 20px hotpink;
+    background-color: rgb(2, 99, 2);
+}
+.card8:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+.card8 p{
+     font: bold;
+    color: #a19f9f;
+    font-style: italic;
+}
+.card9{
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    justify-self: center;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    top: 125px;
+    margin-left: 600px;
+}
+.card9:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    border: 2px solid cyan;
+}
+.image9{
+    text-align: center;
+    position: relative;
+}
+.image9 img{
+    width: 30vw;
+    height: 40vh;
+    opacity: 1;
+    border-radius: 5px 5px  0 0;
+}
+
+.card9 h3{
+    color: wheat;
+    font-weight: 900;
+    font: 20px bold;
+    text-align: center;
+}
+.card9 strong{
+    color:#000000;
+    margin-left: 0px;
+}
+.card9 p{
+    font: bold;
+    color: #a19f9f;
+    font-style: italic;
+}
+.profit-badge{
+    position: relative;
+    bottom: 10px;
+    padding: 10px;
+    margin-left: 60px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    text-shadow:  0 0 20px hotpink;
+    background-color: rgb(2, 99, 2);
+}
+
+.partner{
+    padding: 20px;
+    width:95vw;
+    background-color:transparent;
+    justify-self: center;
+    position: relative;
+    top: 20px;
+    border-radius: 5px 5px 0 0;
+}
+.partner h2{
+    color: rgb(245, 205, 27);
+    text-align: center;
+    font: 20px bold;
+    font-weight: 900;
+    top: 0px;
+}
+.partner p{
+    font: 20px bold;
+    color: #070707;
+    color: rgb(151, 148, 148);
+}
+.grid{
+    position: relative;
+    width: 40vw;
+    height: 30vh;
+    background-color: #202020;
+    border-radius: 5px;
+    border: 2px solid rgb(36, 36, 35);
+    justify-self: left;
+    margin-left: 20px;
+    box-shadow:  0 0 20px black;
+}
+.in1{
+    position: relative;
+    top: 20px;
+}
+.in1 label{
+    position: relative;
+    color: rgb(245, 205, 27);
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+}
+.in1 input{
+    width: 30vw;
+    height: 4vh;
+    border: 1px solid black;
+    margin-left: 10px;
+    color: white;
+    position: relative;
+}
+.in1 input::placeholder{
+    font-weight: 900;
+    color: black;
+}
+.in2 label{
+    position: relative;
+    color: rgb(245, 205, 27);
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+}
+.in2{
+    position: relative;
+    top: 50px;
+}
+.in2 input::placeholder{
+     font-weight: 900;
+    color: black;
+}
+.in2 input{
+    width: 30vw;
+    height: 4vh;
+    border: 1px solid black;
+    margin-left: 10px;
+    position: relative;
+}
+.in1 input:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+    transform: scale(1.02) translateY(-5px);
+}
+
+.in2 input:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+    transform: scale(1.02) translateY(-5px);
+}
+.grid2{
+    position: absolute;
+    justify-self: right;
+    margin-right: 30px;
+    background-color: rgb(46, 45, 45);
+    width: 40vw;
+    padding: 20px;
+    top: 150px;
+    box-shadow:  0 0 20px black;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 5px;
+}
+.grid2 label{
+    position: relative;
+    color: rgb(245, 205, 27);
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+}
+.grid2 select{
+    width: 30vw;
+    height: 4vh;
+    border: 1px solid black;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+.grid2 select::after{
+     font-weight: 900;
+    color: black;
+}
+.grid2 select:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+    transform: scale(1.02) translateY(-5px);
+}
+.grid2 textarea{
+     width: 30vw;
+    height: 10vh;
+    border: 1px solid black;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 20px;
+}
+.grid2 textarea:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+    transform: scale(1.02) translateY(-5px);
+}
+.grid2 textarea::placeholder{
+    font: bold;
+    font-weight: 900;
+    color: black;
+}
+.grid2 textarea:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+    transform: scale(1.02) translateY(-5px);
+}
+.grid2 button{
+    position: relative;
+    top: 20px;
+    padding: 10px 10px;
+    background-color: #015301;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font: 20px bold;
+}
+.grid2 button:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    background-color: #013301;
+    transform: scale(1.01) translateY(-2px);
+}
+.footer{
+    padding: 10px 20px;
+    background-color: #070707;
+    top: 30px;
+    position: relative;
+    text-align: center;
+    color: rgb(180, 176, 176);
+}
+
+/* responsive design */
+
+@media(max-width:600px){
+    .card{
+        position: relative;
+        justify-self: center;
+        margin-left: 0px;
+        width: 80vw;
+        height: auto;
+    }
+    .image img{
+        position: relative;
+        width: 80vw;
+        height: 30vh;
+    }
+    .card1{
+        position: relative;
+        width: 80vw;
+        height: auto;
+        justify-self: center;
+        top: 10px;
+    }
+    .image1 img{
+        width: 80vw;
+        height: 30vh;
+    }
+    .card2{
+        position: relative;
+        width: 80vw;
+        height: auto;
+        justify-self: center;
+        margin-right: 0px;
+        top: 20px;
+    }
+    .image2 img{
+        width: 80vw;
+        height: 30vh;
+    }
+    .card3{
+        position: relative;
+        width: 80vw;
+        height: auto;
+        margin-left: 0px;
+        top: 30px;
+        justify-self: center;
+    }
+    .image3 img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .card4{
+        position: relative;
+        justify-self: center;
+        margin-left: 0px;
+        width: 80vw;
+        height: auto;
+    }
+    .image4 img{
+        position: relative;
+        width: 80vw;
+        height: 30vh;
+    }
+    .card5{
+        position: relative;
+        width: 80vw;
+        height: auto;
+        justify-self: center;
+        top: 10px;
+    }
+    .image5 img{
+        width: 80vw;
+        height: 30vh;
+    }
+    .card6{
+        position: relative;
+        width: 80vw;
+        height: auto;
+        justify-self: center;
+        margin-right: 0px;
+        top: 20px;
+    }
+    .image6 img{
+        width: 80vw;
+        height: 30vh;
+    }
+    .card7{
+        position: relative;
+        width: 80vw;
+        height: auto;
+        margin-left: 0px;
+        top: 30px;
+        justify-self: center;
+    }
+    .image7 img{
+        width: 80vw;
+        height: 30vh;
+    }
+    .card8{
+        position: relative;
+        margin-left: 0px;
+        width: 80vw;
+        height: auto;
+        justify-self: center;
+    }
+    .image8 img{
+        width: 80vw;
+        height: 30vh;
+    }
+    .card9{
+        position: relative;
+        width: 80vw;
+        height: auto;
+        justify-self: center;
+        top: 15px;
+        margin-left: 0px;
+    }
+    .image9 img{
+        width: 80vw;
+        height: 30vh;
+    }
+    .grid{
+        position: relative;
+        width: 80vw;
+        padding: 20px;
+        justify-self: center;
+        margin-left: 0px;
+    }
+    .grid input{
+        position: relative;
+        width: 60vw;
+        height: 4vh;
+    }
+    .grid2{
+        position: relative;
+        width: 80vw;
+        padding: 20px;
+        margin-right: 0px;
+        justify-self: center;
+        top: 20px;
+    }
+    .grid2 select{
+        position: relative;
+        width: 60vw;
+        height: 4vh;
+    }
+    .grid2 textarea{
+        width: 60vw;
+        height: 10vh;
+    }
+}

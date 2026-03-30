@@ -1,0 +1,280 @@
+body{
+    background-color: whitesmoke;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 100px;
+    box-shadow: 10px 10px 10px black;
+    justify-self: center;
+}
+.header{
+    position: relative;
+    text-align: center;
+}
+.header h1{
+    position: relative;
+    font: bold;
+    text-transform: capitalize;
+    text-align: center;
+    bottom: 30px;
+    text-shadow: 5px 5px 5px teal;
+}
+.header p em{
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+    bottom: 10px;
+}
+.navbar{
+    padding: 10px 20px;
+    background-color: rgb(238, 233, 233);
+    box-shadow: 0 0 20px rgb(29, 28, 28);
+    border-radius: 5px;
+    justify-self: center;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.menu strong{
+    position: relative;
+    font: 20px bold;
+}
+.menu a{
+    position: relative;
+    color: black;
+    font: 20px bold;
+    text-decoration: none;
+    padding: 5px 5px;
+    background-color: rgb(235, 220, 220);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu a:hover{
+    transform: scale(1.05);
+    transition: all ease-in 0.3s;
+    background-color:hsl(0, 0%, 100%)
+}
+.about{
+    position: relative;
+    padding: 30px 20px;
+    background-color:#f4f8f5;
+    box-shadow: 0 0 20px black;
+    border-left: 3px solid cyan;
+    border-radius:0 10px 10px 0;
+}
+.table{
+    padding: 40px 20px;
+    background-color: whitesmoke;
+    position: relative;
+    top: 20px;
+    box-shadow: 0 0 15px black;
+    border-left: 3px solid blue;
+    border-radius: 0 10px 10px 0;
+}
+.code{
+    padding: 30px 20px;
+    background-color: #2a2b2a;
+    border-radius: 5px;
+    color: white;
+}
+.media{
+    padding: 30px 20px;
+    position: relative;
+    top: 40px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px;
+    border-left: 3px solid violet;
+    border-radius: 0 10px 10px 0;
+}
+.list{
+    padding: 10px 10px;
+    background-color: #2a2b2a;
+    border-radius: 5px;
+    color: white;
+}
+.image{
+    padding: 10px 10px;
+    background-color: #2a2b2a;
+    border-radius: 5px;
+    color: white;
+}
+.tables{
+    padding: 30px 20px;
+    position: relative;
+    top: 60px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px;
+    border-left: 3px solid rgb(27, 0, 37);
+    border-radius: 0 10px 10px 0;
+}
+.data{
+    padding: 15px 15px;
+    background-color: #2a2b2a;
+    border-radius: 5px;
+    color: white;
+}
+.forms{
+    padding: 30px 20px;
+    position: relative;
+    top: 80px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px;
+    border-left: 3px solid rgb(10, 0, 37);
+    border-radius: 0 10px 10px 0;
+}
+.form{
+    padding: 15px 15px;
+    background-color: #2a2b2a;
+    border-radius: 5px;
+    color: white;
+}
+.submit{
+    padding: 40px 20px;
+     background-image: 
+    linear-gradient(to left, rgba(135, 206, 250, 0.6), rgba(0, 128, 128, 0.6)), 
+    url('./image/canada.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 10px;
+    opacity: 1;
+    top: 100px;
+    box-shadow: 0 0 20px black;
+}
+.submit h2{
+    font: bold;
+    color: white;
+}
+.submit p{
+    font: 20px bold;
+}
+.submit legend{
+    font: 20px bold;
+    color:white;
+}
+.submit input{
+    padding:10px;
+    width: 20vw;
+    color: rgb(255, 255, 255);
+    background-color: #2a2b2a;
+    font: bold;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.submit input::placeholder{
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.submit input:hover{
+    border: 1px solid cyan;
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+    transform: scale(1.05);
+}
+.submit textarea{
+    background-color: #2a2b2a;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.submit textarea:hover{
+     border: 1px solid cyan;
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+    transform: scale(1.05);
+}
+.submit textarea::placeholder{
+     color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.submit button{
+    padding: 10px 15px;
+    background-color: #f4f8f5;
+    box-shadow: 0 0 20px black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.submit button:hover{
+    background-color: #b6b4b4;
+    transition: all ease-in 0.3s;
+    transform: scale(1.05);
+}
+.footer{
+    padding: 30px 20px;
+    background-color: #000;
+    top: 120px;
+    position: relative;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+.footer p strong{
+    color: hsl(177, 100%, 50%);
+}
+.footer a{
+    color: hsl(207, 100%, 50%);
+    text-decoration: none;
+}
+.footer p small{
+    color: whitesmoke;
+    font: 20px bold;
+}
+.button button{
+    position: relative;
+    top: 20px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.button button:hover{
+    transition: all 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #43005e;
+    color: white;
+}
+.btn{
+    position: relative;
+    justify-self: right;
+    bottom: 25px;
+    margin-right: 20px;
+}
+.btn button{
+    padding: 10px 10px;
+    position: relative;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.btn button:hover{
+     transition: all 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #1c005e;
+    color: white;
+}
+.btn a{
+    position: relative;
+    text-decoration: none;
+}
+@media(max-width:600px){
+    .btn{
+        position: relative;
+        bottom: 0px;
+        justify-self: center;
+    }
+    .btn button{
+        position: relative;
+        top: 0px;
+    }
+}
