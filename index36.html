@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🥫EduHub | Activity-Job Portal</title>
+    <title>🥫EduHub |Culinary-Job Portal</title>
     <link rel="stylesheet" href="./index36.css">
 </head>
 <body>
@@ -21,6 +21,8 @@
     <a href="#sports">Sports Science</a>
     <a href="#profits">Earnings</a>
     <a href="#partner">Partnerships</a>
+    <button class="lighting">Light</button>
+    <button class="darkening">Dark</button>
     </div>
 </nav>
 
@@ -77,7 +79,6 @@
         </div>
     
 </section>
-
 <section id="profits" class="profit">
     <h2>💰 Monetization & Career Profits</h2>
     <p>At EduHub, we prioritize your "Return on Education." Here is how our graduates monetize their skills in the current market:</p>
@@ -133,8 +134,88 @@
 </section>
 
 <footer class="footer">
-    <p>&copy; 2026 EduHub Global Initiatives. Dedicated to empowering the next generation of professionals.</p>
+    <div class="para">
+        <h1>🤝EduHub</h1>
+        <p>Empowering the next generation of professionals by transforming passions into careers. Join us in revolutionizing education and workforce development.</p>
+    </div>
+    <div class="link">
+        <h1>Quick Links</h1>
+        <div class="Links">
+            <a href="./index.html">Home</a>
+            <a href="#cooking">Culinary Arts</a>
+            <a href="#sports">Sports Science</a>
+            <a href="#profits">Earnings</a>
+            <a href="#partner">Partnerships</a>
+            <a href="./index37.html">About Us</a>
+        </div>
+    </div>
+    <div class="link2">
+        <h1>Follow Us</h1>
+        <div class="socials">
+            <a href="https://www.facebook.com/eduhubglobal" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/eduhubglobal" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/company/eduhubglobal" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/eduhubglobal" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/eduhubglobal" target="_blank">YouTube</a>
+        </div>
+    </div>
+    <div class="link1">
+        <h1>Contact Us</h1>
+        <p>Email: <a href="mailto:info@eduhub.com">info@eduhub.com</a></p>
+        <p>Phone: +250 7857 86547</p>
+        <p>Address: 123 EduHub Lane, Knowledge City, Canada</p>
+    </div>
+  <div class="list">
+      <p>&copy; 2026 EduHub Global Initiatives. Dedicated to empowering the next generation of professionals.</p>
+  </div>
 </footer>
+<script>
 
+const myform = document.getElementById('myform');
+myform.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const type = document.getElementById('type').value;
+    const message = document.getElementById('message').value;
+    
+
+    console.log("Partnership Inquiry Submitted:");
+    console.log("Name/Organization:", name);
+    console.log("Email:", email);
+    console.log("Partnership Type:", type);
+    console.log("Message:", message);
+    {
+       const cooking = document.getElementById('cooking');
+       const sports = document.getElementById('sports');
+       const profits = document.getElementById('profits');
+       const partner = document.getElementById('partner');
+       cooking.style.display = 'none';
+       sports.style.display = 'none';
+       profits.style.display = 'none';
+       partner.style.display = 'none';
+     } 
+     const header = document.querySelector('.header');
+     const navbar = document.querySelector('.navbar');
+     const footer = document.querySelector('.footer');
+     header.style.display = 'none';
+     navbar.style.display = 'none';
+     footer.style.display = 'none'; 
+    
+     {
+    setInterval(() => {
+        alert("Thank you for your partnership inquiry! We will review your message and get back to you within 3-5 business days.");
+    }, 100);
+    const collaborate = confirm("Would you like to explore more about our partnership opportunities on our website?");
+    if (collaborate) {
+        window.location.href = "./index.html";
+   }
+ myform.reset();
+}
+});
+
+</script>
+<script src="./index36.js"></script>
 </body>
 </html>

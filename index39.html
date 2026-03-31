@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub - Learn About Donations</title>
+    <link rel="stylesheet" href="index39.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🎓 EduHub <span>Donation</span> Learning Center</h1>
+        <p>Learn how to donate, receive funds, and manage your contributions through EduHub. Transform education through generosity!</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#what-is-donation">What is Donation?</a></li>
+            <li><a href="#how-to-donate">How to Donate</a></li>
+            <li><a href="#receiving-donations">Receiving Donations</a></li>
+            <li><a href="#set-time">Set Donation Time</a></li>
+            <li><a href="#donation-history">Donation History</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="what-is-donation" class="section">
+        <h2>What is Donation?</h2>
+        <p>Donations are voluntary contributions made to support educational initiatives, research, and community projects through EduHub. They help fund scholarships, resources, and innovative learning tools that empower students worldwide.</p>
+        <p>By donating, you contribute to the growth of education worldwide. EduHub ensures transparency and accountability in how donations are used, with regular reports and impact updates. Your generosity creates ripple effects that change lives!</p>
+        <p><strong>Impact Areas:</strong> Scholarships for underprivileged students, Technology upgrades for classrooms, Research funding for educational innovation, Community outreach programs, and Teacher training initiatives.</p>
+    </section>
+
+    <section id="how-to-donate" class="section">
+        <h2>How to Donate</h2>
+        <p>EduHub supports multiple secure payment methods to make donating easy and accessible. Choose the method that works best for you - all transactions are encrypted and protected!</p>
+
+        <div class="payment-method">
+            <h3>Credit/Debit Card</h3>
+            <p>Secure online payments using Visa, Mastercard, or American Express. Enter your card details on our PCI-compliant secure portal with SSL encryption. Fast processing within minutes!</p>
+            <p><strong>Benefits:</strong> Instant confirmation, Accepted worldwide, No extra fees, Mobile-friendly</p>
+            <button class="donate-btn" onclick="alert('Redirecting to payment gateway...')">Donate via Card</button>
+        </div>
+
+        <div class="payment-method">
+            <h3>PayPal</h3>
+            <p>Use your PayPal account for quick and secure donations. No need to enter card details - just login and approve! Perfect for recurring donations.</p>
+            <p><strong>Benefits:</strong> Buyer protection, Easy setup, International transfers, Automatic reminders</p>
+            <button class="donate-btn" onclick="alert('Redirecting to PayPal...')">Donate via PayPal</button>
+        </div>
+
+        <div class="payment-method">
+            <h3>Bank Transfer</h3>
+            <p>Direct bank transfers for larger donations or corporate giving. Perfect for tax-deductible contributions with proper documentation.</p>
+            <p><strong>Benefits:</strong> Lower fees, Tax receipts, Large amounts welcome, Wire transfer options</p>
+            <button class="donate-btn" onclick="alert('Contacting support...')">Request Bank Details</button>
+        </div>
+
+        <div class="payment-method">
+            <h3>Cryptocurrency</h3>
+            <p>Support EduHub with Bitcoin, Ethereum, or other cryptocurrencies. We provide wallet addresses for secure, anonymous transactions. Future-forward giving!</p>
+            <p><strong>Benefits:</strong> Borderless, Low fees, Instant global transfer, Blockchain transparency</p>
+            <button class="donate-btn" onclick="alert('Showing crypto wallets...')">View Crypto Wallets</button>
+        </div>
+    </section>
+
+    <section id="receiving-donations" class="section">
+        <h2>Receiving Donations</h2>
+        <p>EduHub allows you to receive donations on various devices. Access your donation dashboard anytime, anywhere with our multi-platform support!</p>
+
+        <div class="device">
+            <h3>Mobile Devices</h3>
+            <p>Use our mobile app or responsive website on smartphones and tablets. Receive real-time notifications of incoming donations with push alerts and SMS updates!</p>
+            <p><strong>Features:</strong> Instant notifications, Touch-optimized interface, Offline viewing, GPS tracking for events</p>
+            <ul>
+                <li>iOS App: Download from App Store - Rated 4.8 stars</li>
+                <li>Android App: Download from Google Play - 1M+ downloads</li>
+                <li>Mobile Web: Access via any browser - No download needed</li>
+            </ul>
+        </div>
+
+        <div class="device">
+            <h3>Desktop Computers</h3>
+            <p>Full-featured dashboard on laptops and desktops. Manage donations, view detailed reports, export data, and create custom analytics.</p>
+            <p><strong>Features:</strong> Advanced analytics, Bulk operations, Custom reports, Multi-monitor support</p>
+            <ul>
+                <li>Web Portal: Login at eduhub.com/dashboard - Secure SSL</li>
+                <li>Desktop App: Available for Windows, macOS, Linux - Offline capabilities</li>
+            </ul>
+        </div>
+
+        <div class="device">
+            <h3>Tablets and Hybrids</h3>
+            <p>Optimized interface for tablets with stylus support. Touch-friendly controls for easy navigation and management.</p>
+            <p><strong>Features:</strong> Gesture controls, Drawing annotations, Large touch targets, Hybrid device support</p>
+            <ul>
+                <li>iPad App: Download from App Store - iPadOS optimized</li>
+                <li>Android Tablets: Use mobile app - Universal APK</li>
+                <li>Hybrids: Surface Pro, Chromebooks - Best of both worlds</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="set-time" class="section">
+        <h2>Set Donation Time</h2>
+        <p>Schedule your donations or set reminders for future contributions. Choose specific dates and times with our intelligent scheduler.</p>
+
+        <form id="donation-scheduler">
+            <div class="form-group">
+                <label for="donation-date">Select Date:</label>
+                <input type="date" id="donation-date" name="donation-date" required>
+                <small>Choose any future date to schedule your donation</small>
+            </div>
+
+            <div class="form-group">
+                <label for="donation-amount">Donation Amount ($):</label>
+                <input type="number" id="donation-amount" name="donation-amount" min="1" step="0.01" required>
+                <small>Enter any amount from $1.00 - no upper limit</small>
+            </div>
+
+            <div class="form-group">
+                <label for="payment-method-select">Payment Method:</label>
+                <select id="payment-method-select" name="payment-method">
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank">Bank Transfer</option>
+                    <option value="crypto">Cryptocurrency</option>
+                </select>
+                <small>Select your preferred secure payment method</small>
+            </div>
+
+            <button type="submit" class="schedule-btn">Schedule Donation</button>
+        </form>
+
+        <div id="scheduled-donations">
+            <h3>Scheduled Donations</h3>
+            <p>Your upcoming scheduled donations will appear here. You can remove them anytime by clicking the remove button.</p>
+            <ul id="donation-list"></ul>
+        </div>
+    </section>
+
+    <section id="join-community" class="section">
+        <h2>Join Our Community</h2>
+        <p>Become part of the EduHub family! Register with us to receive updates, access exclusive content, and connect with fellow education supporters.</p>
+        
+        <div class="join-section">
+            <button id="register-btn" class="register-btn">Register Now</button>
+            <p class="join-benefits">
+                <strong>Benefits of joining:</strong> Exclusive updates, Community events, Volunteer opportunities, Impact reports, Networking with educators
+            </p>
+        </div>
+
+        <!-- Registration Form (Hidden by default) -->
+        <div id="registration-form" class="registration-form" style="display: none;">
+            <h3>Registration Form</h3>
+            <form id="user-registration">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Street address, city, state, zip code"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="occupation">Occupation</label>
+                        <select id="occupation" name="occupation">
+                            <option value="">Select your occupation</option>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher/Educator</option>
+                            <option value="parent">Parent</option>
+                            <option value="business">Business Professional</option>
+                            <option value="retired">Retired</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="education-level">Education Level</label>
+                        <select id="education-level" name="education-level">
+                            <option value="">Select your education level</option>
+                            <option value="high-school">High School</option>
+                            <option value="associate">Associate Degree</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="doctorate">Doctorate/PhD</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Areas of Interest (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interests" value="donations"> Making Donations</label>
+                        <label><input type="checkbox" name="interests" value="volunteering"> Volunteering</label>
+                        <label><input type="checkbox" name="interests" value="events"> Community Events</label>
+                        <label><input type="checkbox" name="interests" value="mentoring"> Mentoring Programs</label>
+                        <label><input type="checkbox" name="interests" value="research"> Educational Research</label>
+                        <label><input type="checkbox" name="interests" value="fundraising"> Fundraising Activities</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Tell us about your experience with education (Optional)</label>
+                    <textarea id="experience" name="experience" rows="4" placeholder="Share your background, experiences, or why you're passionate about education..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        Subscribe to our newsletter for updates and opportunities
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Registration</button>
+                    <button type="button" id="cancel-btn" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="donation-history" class="section">
+        <h2>Donation History & Receipts</h2>
+        <p>View your donation history and download receipts for your records. All donations are tracked and receipts are available for tax purposes.</p>
+
+        <div class="history-controls">
+            <button id="load-history-btn" class="history-btn">Load My Donation History</button>
+            <div class="filter-options">
+                <label for="history-filter">Filter by:</label>
+                <select id="history-filter">
+                    <option value="all">All Donations</option>
+                    <option value="this-month">This Month</option>
+                    <option value="last-3-months">Last 3 Months</option>
+                    <option value="this-year">This Year</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="donation-history-container" class="history-container" style="display: none;">
+            <div class="history-summary">
+                <h3>Your Donation Summary</h3>
+                <div class="summary-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-donations">0</span>
+                        <span class="stat-label">Total Donations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-amount">$0.00</span>
+                        <span class="stat-label">Total Amount</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="this-year-amount">$0.00</span>
+                        <span class="stat-label">This Year</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donation-list">
+                <h3>Recent Donations</h3>
+                <div id="donations-list-content">
+                    <!-- Sample donation entries for demo -->
+                    <div class="donation-item" data-id="1">
+                        <div class="donation-info">
+                            <div class="donation-amount">$50.00</div>
+                            <div class="donation-date">March 15, 2026</div>
+                            <div class="donation-method">Credit Card</div>
+                            <div class="donation-status">Completed</div>
+                        </div>
+                        <div class="donation-actions">
+                            <button class="download-btn" onclick="downloadReceipt(1)">Download Receipt</button>
+                            <button class="view-details-btn" onclick="viewDonationDetails(1)">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="donation-item" data-id="2">
+                        <div class="donation-info">
+                            <div class="donation-amount">$25.00</div>
+                            <div class="donation-date">February 28, 2026</div>
+                            <div class="donation-method">PayPal</div>
+                            <div class="donation-status">Completed</div>
+                        </div>
+                        <div class="donation-actions">
+                            <button class="download-btn" onclick="downloadReceipt(2)">Download Receipt</button>
+                            <button class="view-details-btn" onclick="viewDonationDetails(2)">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="donation-item" data-id="3">
+                        <div class="donation-info">
+                            <div class="donation-amount">$100.00</div>
+                            <div class="donation-date">January 10, 2026</div>
+                            <div class="donation-method">Bank Transfer</div>
+                            <div class="donation-status">Completed</div>
+                        </div>
+                        <div class="donation-actions">
+                            <button class="download-btn" onclick="downloadReceipt(3)">Download Receipt</button>
+                            <button class="view-details-btn" onclick="viewDonationDetails(3)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bulk-actions">
+                <button id="download-all-btn" class="bulk-btn">Download All Receipts (PDF)</button>
+                <button id="export-csv-btn" class="bulk-btn">Export to CSV</button>
+            </div>
+        </div>
+
+        <!-- Donation Details Modal -->
+        <div id="donation-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <h3>Donation Details</h3>
+                <div id="modal-content">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact <span>EduHub</span></h3>
+                <p>Email: donations@eduhub.com</p>
+                <p>Phone: +250 785786547</p>
+                <p>Address: 123 Education St, Learning City, LC 12345</p>
+                <p><strong>Support Hours:</strong> Monday-Friday 9AM-6PM EST</p>
+            </div>
+        </div>
+        <div class="link">
+             <h3>Quick Links</h3>
+        <div class="footer-links">
+            <a href="#what-is-donation">What is Donation?</a>
+            <a href="#how-to-donate">How to Donate</a>
+            <a href="#receiving-donations">Receiving Donations</a>
+            <a href="#set-time">Set Donation Time</a>
+            <a href="#donation-history">Donation History</a>
+            <a href="./index.html">Back to Home</a>
+            <a href="./index38.html">Previous Page</a>
+            <a href="./index40.html">Next Page</a>
+        </div>
+        </div>
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/eduhub" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com/eduhub" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/company/eduhub" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/eduhub" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/eduhub" target="_blank">YouTube</a>
+            </div>
+        </div>
+        <div class="para">
+        <p>&copy; 2026 EduHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index39.js"></script>
+</body>
+</html>

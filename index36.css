@@ -391,6 +391,7 @@ body{
     position: relative;
     margin-left: 10px;
     font: 17px bold;
+    color: black;
 }
 .image6{
     position: relative;
@@ -430,6 +431,7 @@ body{
     position: relative;
     margin-left: 10px;
     font: 17px bold;
+    color: black;
 }
 .image7{
     position: relative;
@@ -558,7 +560,7 @@ body{
 }
 .card9 p{
     font: bold;
-    color: #a19f9f;
+    color: hsl(0, 1%, 54%);
     font-style: italic;
 }
 .profit-badge{
@@ -567,7 +569,7 @@ body{
     padding: 10px;
     margin-left: 60px;
     border-radius: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 900;
     text-shadow:  0 0 20px hotpink;
     background-color: rgb(2, 99, 2);
@@ -743,15 +745,6 @@ body{
     background-color: #013301;
     transform: scale(1.01) translateY(-2px);
 }
-.footer{
-    padding: 10px 20px;
-    background-color: #070707;
-    top: 30px;
-    position: relative;
-    text-align: center;
-    color: rgb(180, 176, 176);
-}
-
 /* responsive design */
 
 @media(max-width:600px){
@@ -902,4 +895,220 @@ body{
         width: 60vw;
         height: 10vh;
     }
+}
+
+.footer{
+    padding: 10px 20px;
+    background-color: #070707;
+    top: 30px;
+    position: relative;
+    color: rgb(180, 176, 176);
+    animation-duration: 1s;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+@keyframes fadeIn{
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.para{
+    position: relative;
+    text-align: left;
+    margin-left: 20px;
+    width: 20vw;
+    height: auto;
+    color: rgb(151, 148, 148);
+    font: 20px bold;
+    font-style: italic;
+}
+.para h1{
+    color: rgb(245, 205, 27);
+    font-weight: 900;
+}
+.para p{
+    color: rgb(151, 148, 148);
+    font: 20px bold;
+    font-style: italic;
+}
+.para:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    color: white;
+}
+.link{
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    border-radius: 5px;
+    justify-self: center;
+    top: 30px;
+    text-align: center;
+}
+.Links{
+   display: grid;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.Links a{
+    color: rgb(151, 148, 148);
+    text-decoration: none;
+    font-weight: 900;
+}
+.Links a:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    color: #00ff80;
+    text-decoration: underline 2px solid #00ff80;
+}
+.link2{
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    justify-self: right;
+    top: 30px;
+    text-align: center;
+}
+.socials{
+    display: grid;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.socials a{
+    color: rgb(151, 148, 148);
+    text-decoration: none;
+    font-weight: 900;
+}
+.socials a:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    color: #00ff80;
+    text-decoration: underline 2px solid #00ff80;
+}
+.link1{
+    position: relative;
+    width: 20vw;
+    height: auto;
+    justify-self: left;
+    top: 30px;
+    margin-left: 20px;
+}
+.link1 a{
+    color: rgb(151, 148, 148);
+    text-decoration: none;
+    font-weight: 900;
+}
+.link1 a:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    color: #00ff80;
+    text-decoration: underline 2px solid #00ff80;
+}
+.list{
+    position: relative;
+    width: 60vw;
+    height: auto;
+    justify-self: center;
+    top: 20px;
+    text-align: center;
+}
+.list h1{
+    color: rgb(245, 205, 27);
+    font-weight: 900;
+}
+.list p{
+    color: rgb(151, 148, 148);
+    font: 20px bold;
+    font-style: italic;
+}
+@media(max-width:600px){
+    .list{
+        position: relative;
+        width: 80vw;
+        top: 30px;
+        color: rgb(66, 66, 66);
+    }
+    .footer p{
+        text-align: center;
+    }   
+    .para{
+     position: relative;
+    text-align: center;
+    margin-left: 0px;
+    width: 80vw;
+    height: auto;
+    color: rgb(151, 148, 148);
+    font: 20px bold;
+    font-style: italic; 
+}
+.link{
+    position: relative;
+    width: 80vw;
+    height: auto;
+    border-radius: 5px;
+    justify-self: center;
+    top: 30px;
+    text-align: center;
+}
+.link2{
+    position: relative;
+    width: 80vw;
+    height: auto;
+    justify-self: center;
+    margin-right: 0px;
+    top: 30px;
+    text-align: center;
+}
+.link1{
+    position: relative;
+    width: 80vw;
+    height: auto;
+    justify-self: left;
+    top: 30px;
+    margin-left: 0px;
+}
+}
+.lighting{
+    position: relative;
+    padding: 10px 10px;
+    background-color: #015301;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font: 20px bold;
+    bottom: 10px;
+}
+.lighting:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;    background-color: #013301;
+    transform: scale(1.01) translateY(-2px);
+}
+.darkening{
+    position: relative;
+    padding: 10px 10px;
+    background-color: hsl(0, 0%, 99%);
+    color: #000000;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font: 20px bold;
+    bottom: 10px;
+}
+.darkening:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    background-color: #013301;
+    transform: scale(1.01) translateY(-2px);
 }

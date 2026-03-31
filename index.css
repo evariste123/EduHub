@@ -687,7 +687,7 @@
                                     color: black;
                                     animation-direction: alternate;
                                     animation-delay: 2s;
-                                    background-image: url('./image/eva.png');
+                                    background-image: url('./image2/africa.jpeg');
                                     animation-iteration-count: infinite;
                                     background-size: cover;
                                     border-radius: 50%;
@@ -726,7 +726,7 @@
                                 .card5 i{
                                     position: relative;
                                     top: 40px;
-                                    color: #02302a;
+                                    color: #ffbb28;
                                     font-weight: 900;
                                 }
                                 #services.service{
