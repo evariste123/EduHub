@@ -87,13 +87,15 @@ body{
 .home h1{
     font-size: 3rem;
     color: #ffffff; 
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .home p{
     font-size: 1.25rem;
     text-align: center;
-    color: #ffffff;
+    color: #072007;
     font: bold;
+    font-weight: 900;
 }
 .home a{
     display: inline-block;
@@ -189,10 +191,10 @@ body{
         position: relative;
         width: 80vw;
         top: 90px;
-        background-color: skyblue;
-        margin-right: 350px;
+        justify-self: center;
+        background-color: rgb(238, 245, 248);
         border-radius: 10px;
-        margin-left: 0px;
+        margin-right: 300px;
     }
 }
 .login-section a{

@@ -1,5 +1,5 @@
 body{
-    background-color: #162a2c;
+    background-color: #9b9a9a;
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -7,7 +7,7 @@ body{
     position: relative;
     width: 100vw;
     height: 10vh;
-    background-color: #1e0f42;
+    background-color: #313031;
     justify-items: right;
     justify-self: center;
 }
@@ -150,7 +150,7 @@ body{
 }
 .container h1{
     position: relative;
-    color: hsl(157, 100%, 51%);
+    color: hwb(0 0% 100%);
     overflow-wrap: break-word;
     margin-left: 20px;
     top: 20px;
@@ -194,12 +194,12 @@ body{
     width: 100vw;
     justify-self: center;
     height: auto;
-    background-color: #172b2c;
+    background-color: #9b9a9a;
 }
 .grid{
     position: relative;
     text-align: center;
-    color: #0f8ef7;
+    color: hsl(0, 0%, 0%);
     top: 10px;
     font-weight: 500;
 }
@@ -208,7 +208,7 @@ body{
     width: 30vw;
     height: auto;
     top: 50px;
-    background-color: #fff;
+    background-color: #979393;
     border-radius: 10px;
     overflow-wrap: break-word;
     margin-left: 30px;
@@ -304,7 +304,7 @@ body{
     position: absolute;
     width: 30vw;
     height: auto;
-    background-color: #fff;
+    background-color: #979393;
     border-radius: 10px;
     justify-self: center;
     top: 100px;
@@ -391,7 +391,7 @@ body{
     position: absolute;
     width: 30vw;
     height: auto;
-    background-color: #fff;
+    background-color: #979393;
     border-radius: 10px;
     justify-self: right;
     margin-right: 30px;
@@ -480,7 +480,7 @@ body{
     position: relative;
     width: 30vw;
     height: auto;
-    background-color: #fff;
+    background-color: #979393;
     border-radius: 10px;
     margin-left: 40px;
     top: 80px;
@@ -566,7 +566,7 @@ body{
     width: 100vw;
     justify-self: center;
     height: auto;
-    background-color: #0c0113;
+    background-color: #97979b;
     top: 100px;
 }
 
@@ -574,7 +574,7 @@ body{
     position: relative;
     top: 10px;
     text-align: center;
-    color: oklab(86.53999999999999% -0.13787 -0.04802);
+    color: rgb(0, 0, 0);
     font: bold;
 }
 .form{

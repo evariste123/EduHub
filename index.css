@@ -258,6 +258,39 @@
                             justify-self: center;
                         }
                     }
+
+                    .theme-light {
+                        background-color: #ffffff !important;
+                        color: #0a0a0a !important;
+                    }
+
+                    .theme-dark {
+                        background-color: #0f172a !important;
+                        color: #f8fafc !important;
+                    }
+
+                    .theme-blue {
+                        background-color: #e8f1ff !important;
+                        color: #0a2a66 !important;
+                    }
+
+                    .theme-dark .navbar {
+                        background-color: #111827 !important;
+                        color: #f1f5f9 !important;
+                    }
+
+                    .theme-dark .nav-link {
+                        color: #f1f5f9 !important;
+                    }
+
+                    .theme-blue .navbar {
+                        background-color: #1e3a8a !important;
+                        color: #e0e7ff !important;
+                    }
+
+                    .theme-blue .nav-link {
+                        color: #eff6ff !important;
+                    }
                     @keyframes fadeIn {
                         from {
                             opacity: 0;
@@ -1606,7 +1639,43 @@
                     top:200px;
                 }
             }
+/* <!footer setting --> */
 
-
+.footer-settings {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-settings label {
+    color: #fff;
+    font-weight: 600;
+}
+.footer-settings select {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.footer-settings select:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+.footer-settings select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+    border-color: #007bff;
+}
+.footer-settings select:focus:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
 
 

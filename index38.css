@@ -353,27 +353,15 @@ font-weight: bold;
     gap: 10px;
     flex-wrap: wrap;
 }
-.social-links ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-.social-links ul li {
-    margin-bottom: 5px;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-}
-.social-links ul li a {
+.social-links a{
     color: #ffffff;
     text-decoration: none;
     font: 20px bold;
 }
-.social-links ul li a:hover {
-    transform: scale(1.02) translateY(-2px);
-    transition: all ease-in 0.3s;
+.social-links a:hover {
+    transform: scale(1.02) translateY(-5px);
+    transition: all 0.3s;
     color: rgb(0, 255, 76);
-    padding: 5px 5px;
-    background-color: #007bff;
-    border-radius: 5px;
 }
 
 @media (max-width: 768px) {

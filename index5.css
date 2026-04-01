@@ -6,8 +6,9 @@ body{
 .container{
     position: relative;
     top: 10px;
-    width: 90vw;
-    height: 90vh;
+    /* width: 90vw;
+    height: 90vh; */
+    padding: 80px 50px;
     background-color: #011a2b;
     box-shadow: 0 0 5px cyan;
     justify-self: center;
@@ -20,11 +21,11 @@ body{
 }
 @keyframes eva{
     25%{
-        transform:scale(0) translateX(20px);
+        transform:scale(0.5) translateX(20px);
         opacity: 0;
     }
     50%{
-        transform:scale(0.5) translateY(0px);
+        transform:scale(0.8) translateY(0px);
         opacity: 1;
     }
     100%{
@@ -92,7 +93,7 @@ body{
     border-radius: 10px;
     background-color: #011f33;
      border: 1px solid darkcyan;
-     top: 300px;
+     top: 550px;
 }
 .card2:hover{
      transform: translateY(5px);
@@ -120,7 +121,7 @@ body{
     justify-self: right;
     width: 25vw;
     margin-right: 20px;
-    bottom: 80px;
+    bottom: 130px;
     height: auto;
     background-color: #011f33;
     border: 1px solid darkcyan;

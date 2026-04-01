@@ -93,7 +93,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #495057;
+    background-color: #161616;
 }
 
 .application-form {
@@ -211,10 +211,11 @@ body {
     }
 }
 .footer {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background-color: #343a40;
     color: white;
     position: relative;
+
 }
 .contact-info {
     position:relative;

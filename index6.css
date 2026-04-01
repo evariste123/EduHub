@@ -1,11 +1,11 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-    background:linear-gradient(to left,lightblue,rgb(74, 139, 139),rgb(90, 143, 90));
+    background:linear-gradient(to left,lightblue,rgb(2, 66, 66),rgb(2, 54, 54));
 }
 .header{
     position: relative;
-    width: 90vw;
+    width: 99vw;
     justify-self: center;
     padding: 10px;
     text-align: center;
@@ -18,18 +18,19 @@ body{
 }
 @media(max-width:600px){
     .header{
-        position: fixed;
-        width: 90vw;
-        padding: 10px;
+        position: absolute;
+        width: 50vw;
+        padding: 2px;
         flex-wrap: wrap;
         border-radius: 10px;
-        justify-self: center;
+        justify-self: left;
+        animation-name: none;
         background-color: #23012c;
     }
 }
 @keyframes header{
     50%{
-        transform: scale(0) rotate(0deg);
+        transform: scale(0.5) rotate(0deg);
         opacity: 0;
         border-radius: 10px;
         background-color: #01302d;
@@ -65,22 +66,29 @@ body{
 .navbar{
     position: relative;
     top: 0px;
-    width: 90vw;
-    padding: 15px;
+    width: 99vw;
+    height: 50px;
     justify-items: center;
     justify-self: center;
-     border-radius: 0 30px 0 30px;
     flex-wrap: wrap;
-    background-color: hsl(219, 98%, 16%);
+    background-color: hwb(234 6% 0%);
 }
 @media(max-width:600px){
     .navbar{
+        position: absolute;
+        top: 0px;
+        background-color: transparent;
+        width: 50vw;
+        border-radius: 5px;
+        padding: 20px;
+        justify-self: right;
+    }
+    .menu{
+        display: grid;
+    }
+    .menu a{
         position: relative;
-        top: 260px;
-        width: 80vw;
-        transform: translate(-5px);
-        border-radius: 10px;
-        padding: 10px;
+        margin-left: 30px;
     }
 }
 .menu{
@@ -94,12 +102,12 @@ body{
     color: white;
     cursor: pointer;
     transition: all ease 0.3s;
+    top: 10px;
 }
 .menu a:hover{
-    color: #000000;
-    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
     padding: 8px 10px;
-    background-color: #2a2a2b;
+    background-color: hsl(0, 0%, 0%);
     box-shadow: 0 0 15px cyan;
 }
 
@@ -169,7 +177,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 270px;
+        top: 420px;
         background-color: #2a2a2b;
     }
 }
@@ -192,7 +200,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 280px;
+        top: 440px;
         background-color: #2a2a2b;
     }
 }
@@ -253,7 +261,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 290px;
+        top: 460px;
         background-color: #2a2a2b;
     }
 }
@@ -326,7 +334,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 300px;
+        top: 470px;
         background-color: #2a2a2b;
     }
 }
@@ -390,7 +398,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 310px;
+        top: 480px;
         background-color: #2a2a2b;
     }
 }
@@ -456,7 +464,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 320px;
+        top: 500px;
         background-color: #2a2a2b;
     }
 }
@@ -523,7 +531,8 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 330px;
+        top: 520px;
+        margin-left: 0px;
         background-color: #2a2a2b;
     }
 }
@@ -589,7 +598,7 @@ body{
         width: 80vw;
         height: auto;
         margin-right: 0px;
-        top: 340px;
+        top: 540px;
         background-color: #2a2a2b;
     }
 }
@@ -656,7 +665,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 360px;
+        top: 560px;
         background-color: #2a2a2b;
     }
 }
@@ -724,7 +733,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 370px;
+        top: 570px;
         background-color: #2a2a2b;
     }
 }
@@ -790,7 +799,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 380px;
+        top: 580px;
         background-color: #2a2a2b;
     }
 }
@@ -857,7 +866,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 390px;
+        top: 590px;
         background-color: #2a2a2b;
     }
 }
@@ -924,7 +933,7 @@ body{
         justify-self: center;
         width: 80vw;
         height: auto;
-        top: 400px;
+        top: 610px;
         background-color: #2a2a2b;
     }
 }
@@ -1060,7 +1069,7 @@ body{
         justify-self: center;
         margin-right: 0px;
         background-color: #051120;
-        top: 400px;
+        top: 610px;
     }
 }
 @media(max-width:600px){
@@ -1120,7 +1129,7 @@ body{
         height: auto;
         justify-self: center;
         margin-left: 0px;
-        top: 420px;
+        top: 630px;
     }
 }
 .card14{
@@ -1182,7 +1191,7 @@ body{
         height: 30vh;
         justify-self: center;
         margin-left: 0px;
-        top: 450px;
+        top: 650px;
     }
 }
 @media(max-width:600px){
@@ -1204,7 +1213,7 @@ body{
 @media(max-width:600px){
     .line{
         position: relative;
-        top: 470px;
+        top: 660px;
         box-shadow: 0 0  15px cyan;
         width: 200px;
         border-radius: 10px;
@@ -1224,7 +1233,7 @@ body{
 @media(max-width:600px){
     .footer-content{
         position: relative;
-        top: 450px;
+        top: 650px;
         justify-self: center;
     }
 }
@@ -1372,19 +1381,16 @@ body{
     position: relative;
     padding: 12px 22px;
     border: none;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: #003d0a;
     border-radius: 5px;
     font: 20px bold;
 }
 .footer-newsletter button:hover{
-     border: 1px solid cyan;
     box-shadow: 0 0 5px cyan;
     cursor: pointer;
-    color: white;
-    transform: scale(1.01);
+    color: white !important;
     background-color: #017701;
-    padding: 10px 15px;
 }
 
 @media(max-width:600px){

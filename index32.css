@@ -606,3 +606,109 @@ body{
     color: #032d9e;
     text-align: center;
 }
+
+.footer{
+    position: relative;
+    padding: 10px;
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    top: 3520px;
+    text-align: center;
+}
+.eduhub{
+    position: relative;
+    text-align: center;
+    transform: translate(-20%);
+    top: 50px;
+}
+.conta{
+    position: relative;
+    text-align: center;
+    transform: translate(0%);
+    bottom: 30px;
+}
+.eduhub h1{
+    color: rgb(14, 247, 158);
+    text-decoration: none;
+    font: 20px bold;
+}
+.conta h1{
+    color: rgb(14, 247, 158);
+    text-decoration: none;
+    font: 20px bold;
+}
+.m{
+    position: relative;
+    justify-self: center;
+    transform: translate(260%);
+    bottom: 130px;
+}
+.m h1{
+    color: #0fff5b;
+    font-size: 20px;
+}
+.m1{
+    display: grid;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.m1 a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.m1 a:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    transform: translateY(-5px);
+    color: #1ef566;
+}
+.media{
+    position: relative;
+    bottom: 160px;
+    transform: translate(0%);
+}
+.media-links{
+    display: grid;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.media-links a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.media-links a:hover{
+    transition: all ease-in 0.3s;
+    transform: translateY(-5px);
+    color: #0fff5b;
+}
+.para{
+    position: relative;
+    bottom: 50px;
+}
+@media(max-width:600px){
+    .footer{
+        position: relative;
+        top: 100px;
+    }
+    .media{
+        position: relative;
+        bottom:50px;
+        transform: translate(0%);
+    }
+    .m{
+        position: relative;
+        transform: translate(0%);
+        bottom: 20px;
+    }
+    .eduhub{
+        position: relative;
+        transform: translate(0%);
+        top: 0px;
+    }
+    .conta{
+        position: relative;
+        bottom: 0px;
+    }
+}
