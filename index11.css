@@ -1,5 +1,5 @@
 body{
-    background-color: #231338;
+    background-color: #232324;
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -7,7 +7,7 @@ body{
     position: relative;
     width: 100vw;
     height: 10vh;
-    background-color: #170d2e;
+    background-color: #292929;
     justify-items: right;
     justify-self: center;
 }
@@ -17,8 +17,11 @@ body{
         background-color: #000000;
         color: white;
         justify-items: right;
-        padding: 10px;
+        height: 20vh;
         flex-wrap: wrap;
+    }
+    .nav-links{
+        display: grid;
     }
 }
 @media(max-width:600px){
@@ -66,8 +69,9 @@ body{
     border-radius: 5px;
     top: 10px;
     text-align: center;
-    box-shadow: 0 0 20px cyan;
-    background-color: #0f8ef7;
+    box-shadow: 0 0 20px rgb(252, 252, 252);
+    background-color: #363636;
+    color: white;
 }
 @media(max-width:600px){
     .logo{
@@ -127,7 +131,7 @@ body{
     color: white;
     cursor: pointer;
     border: none;
-    background-color: #0f8ef7;
+    background-color: #024983;
 }
 .library-controls button:hover{
     transition: all ease 0.3s;
@@ -233,9 +237,11 @@ text-align: center;
     position: relative;
     margin-left: 20px;
     padding: 10px 10px;
-    background-color: #0f8ef7;
+    background-color: #024a85;
     border: none;
+    color: white;
     cursor: pointer;
+    cursor: all-scroll;
     font: 20px bold;
     border-radius: 5px;
 }
@@ -252,7 +258,7 @@ text-align: center;
     width: 50vw;
     height:auto;
     border-radius: 10px;
-    background-color:#0f2b3b;
+    background-color:#1b1b1b;
 }
 @media(max-width:600px){
     .modal{

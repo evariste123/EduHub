@@ -3,6 +3,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: 'Arial', sans-serif;
+    opacity: 0.8;
 }
 .container {
     max-width: 1200px;
@@ -117,7 +118,7 @@ body {
     padding: 70px 90px;
     font-size: 1rem;
     color: #fff;
-    background-color: #007bff;
+    background-color: #172e47;
     border: 1px solid black;
     overflow-wrap: break-word;
     flex-wrap: wrap;
@@ -126,13 +127,14 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    opacity: 0.5;
 }
 .buttons button:hover {
-    background-color: #0056b3;
+    background-color: #082d55;
     transform: scale(1.1);
     opacity: 0.9;
     cursor: pointer;
-    border: 1px solid cyan;
+    border: 1px solid rgb(157, 218, 218);
     box-shadow: 0 0 10px rgb(2, 255, 255);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }

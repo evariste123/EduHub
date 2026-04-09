@@ -1,0 +1,344 @@
+body{
+    max-width: 1200px;
+    padding: 50px 20px;
+    max-height: 1200px;
+    opacity: 1;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.item{
+    position: relative;
+    justify-self: center;
+    padding: 100px 20px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 1;
+    border: 1px solid #d6d4d4;
+    box-shadow:  0 0 rgb(from color r g b);
+    box-shadow: 0 0 10px rgb(44, 44, 44);
+    cursor: pointer;
+    animation-name: slideIn;
+    animation-timing-function: all ease-in 0.3s;
+    animation-duration: 5s;
+    animation-delay: 2;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+    @keyframes slideIn {
+    0%{
+       transform: translateY(20px) scale(0.8);
+       opacity: 0;
+       float: left;
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(0) scale(0.5);
+    }
+    100%{
+        transform: translateY(20px) scale(1);
+        opacity: 1;
+    }
+}
+.h1{
+    position: relative;
+    justify-self: center;
+    bottom: 70px;
+    font: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.p{
+    position: relative;
+    justify-self: center;
+    bottom: 60px;
+    font-size: 20px;
+    font: bold;
+}
+.item1{
+    position: relative;
+    bottom: 40px;
+}
+.item1 label{
+    color: rgb(from color r g b);
+    font-size: 17px;
+    font: bold;
+    font-weight: 900;
+}
+.item1 input{
+    padding: 8px 80px;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-top: none;
+    border-radius: 0px;
+}
+.item1 input::placeholder{
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+.item1 input:hover{
+    transition: all ease 0.3s;
+    transform: scale(1.02);
+    border-bottom: 2px solid darkcyan;
+    cursor: pointer;
+}
+
+.item2{
+    position: relative;
+    bottom: 40px;
+}
+.item2 label{
+    color: rgb(from color r g b);
+    font-size: 17px;
+    font: bold;
+    font-weight: 900;
+}
+.item2 input{
+    padding: 8px 80px;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-top: none;
+    border-radius: 0px;
+}
+.item2 input::placeholder{
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+.item2 input:hover{
+    transition: all ease 0.3s;
+    transform: scale(1.02);
+    border-bottom: 2px solid darkcyan;
+    cursor: pointer;
+}
+
+.item3{
+    position: relative;
+    bottom: 30px;
+}
+.item3 label{
+    color: rgb(from color r g b);
+    font-size: 17px;
+    font: bold;
+    font-weight: 900;
+}
+.item3 select{
+    padding: 8px 80px;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    background-color: transparent;
+    font-weight: 500;
+    border-top: none;
+    border-radius: 0px;
+}
+.item3 select::placeholder{
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.item3 select:hover{
+    transition: all ease 0.3s;
+    transform: scale(1.02);
+    border-bottom: 2px solid darkcyan;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+}
+
+.item4{
+    position: relative;
+    bottom: 20px;
+}
+.item4 label{
+    color: rgb(from color r g b);
+    font-size: 17px;
+    font: bold;
+    font-weight: 900;
+}
+.item4 input{
+    padding: 5px;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-top: none;
+    border-radius: 0px;
+}
+.item4 input::placeholder{
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+.item4 input:hover{
+    transition: all ease 0.3s;
+    transform: scale(1.02);
+    border-bottom: 2px solid darkcyan;
+    cursor: pointer;
+}
+
+.item5{
+    position: relative;
+    top: 20px;
+    justify-self: center;
+}
+.item5 label{
+    color: rgb(from color r g b);
+    font-size: 17px;
+    font: bold;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+}
+.item5 textarea{
+    padding: 8px 80px;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-top: none;
+    border-radius: 0px;
+}
+.item5 textarea::placeholder{
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+.item5 textarea:hover{
+    transition: all ease 0.3s;
+    transform: scale(1.02);
+    border-bottom: 2px solid darkcyan;
+    cursor: pointer;
+}
+.item6{
+    position: relative;
+    top: 50px;
+    justify-self: left;
+    margin-left: 20px;
+}
+.item6 button{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #125539;
+    color: white;
+}
+.item6 button:hover{
+    transition: all ease-in 0.3s;
+    cursor:wait;
+    background-color: #0d3d29;
+    transform: scale(1.03) translateY(-3px);
+}
+.item7{
+    position: absolute;
+    top: 10px;
+    justify-self: right;
+    margin-right: 0px;
+}
+.item7 button{
+    background-color: #e0c52c;
+    border: 1px solid #f5e9a7;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 10px 10px;
+    color: black;
+}
+.item7 button:hover{
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+    background-color: #f5e9a7;
+    transform: scale(1.03)translateY(-3px);
+}
+
+/* my responsive design */
+
+@media(max-width:600px){
+    .item{
+        position: relative;
+        width: 80vw;
+        height: auto;
+        justify-self: center;
+    }
+    .item1{
+        position: relative;
+        justify-self: center;
+    }
+    .item1 input{
+        width: 40vw;
+        height: 5vh;
+        overflow-wrap: break-word;
+    }
+    .item2{
+        position: relative;
+        justify-self: center;
+    }
+    .item2 input{
+        width: 40vw;
+        height: 5vh;
+        overflow-wrap: break-word;
+    }
+    .item3{
+        position: relative;
+        justify-self: center;
+    }
+    .item3 select{
+        width: 40vw;
+        height: 5vh;
+        overflow-wrap: break-word;
+    }
+    .item4{
+        position: relative;
+        justify-self: center;
+    }
+    .item4 input{
+        width: 40vw;
+        height: 5vh;
+        overflow-wrap: break-word;
+    }
+    .item5{
+        position: relative;
+        justify-self: center;
+    }
+    .item5 textarea{
+        width: 40vw;
+        height: 7vh;
+        overflow-wrap: break-word;
+    }
+    .item6{
+        position: relative;
+        justify-self: center;
+        margin-left: 0px;
+    }
+    .item7{
+        position: relative;
+        justify-self: center;
+        margin-right: 0px;
+        top: 60px;
+    }
+}

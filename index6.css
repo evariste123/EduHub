@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-    background:linear-gradient(to left,lightblue,rgb(2, 66, 66),rgb(2, 54, 54));
+    background:linear-gradient(to left,rgb(74, 75, 75),rgb(42, 43, 43),rgb(45, 46, 46));
 }
 .header{
     position: relative;
@@ -71,7 +71,7 @@ body{
     justify-items: center;
     justify-self: center;
     flex-wrap: wrap;
-    background-color: hwb(234 6% 0%);
+    background-color: hwb(234 0% 92%);
 }
 @media(max-width:600px){
     .navbar{

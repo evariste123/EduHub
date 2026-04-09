@@ -1,5 +1,5 @@
 body{
-    background-color: #9b9a9a;
+    background-color: #363636;
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -7,7 +7,7 @@ body{
     position: relative;
     width: 100vw;
     height: 10vh;
-    background-color: #313031;
+    background-color: #090a44;
     justify-items: right;
     justify-self: center;
 }
@@ -65,8 +65,9 @@ body{
     border-radius: 5px;
     top: 10px;
     text-align: center;
-    box-shadow: 0 0 20px cyan;
-    background-color: #0f8ef7;
+    box-shadow: 0 0 20px rgb(43, 12, 128);
+    background-color: #282929;
+    color: white;
 }
 @media(max-width:600px){
     .logo{
@@ -97,14 +98,14 @@ body{
     position: relative;
     width: 80vw;
     height: 50vh;
-    border: 1px solid cyan;
+    border: 1px solid rgb(59, 59, 59);
     border-radius: 5px;
     justify-self: center;
     top: 10px;
     animation-duration: 5s;
     animation-name: eva;
     animation-delay: 2s;
-    background-color: #0e353b;
+    background-color: #363636;
     animation-iteration-count: 1;
     animation-direction: alternate;
 }
@@ -194,7 +195,7 @@ body{
     width: 100vw;
     justify-self: center;
     height: auto;
-    background-color: #9b9a9a;
+    background-color: #363636;
 }
 .grid{
     position: relative;
@@ -566,7 +567,7 @@ body{
     width: 100vw;
     justify-self: center;
     height: auto;
-    background-color: #97979b;
+    background-color: #313030;
     top: 100px;
 }
 

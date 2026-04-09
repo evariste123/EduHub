@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-    background: #ffffff;
+    background: #2b2a2a;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -38,7 +38,7 @@ body {
 }
 
 .nav-logo a {
-    color: #000000;
+    color: hsl(0, 0%, 100%);
     padding: 10px 10px;
     background-color: #667eea;
     border: none;
@@ -55,7 +55,7 @@ body {
 }
 
 .nav-menu a {
-    color: #000000;
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
     font: 20px bold;
     transition: color 0.3s ease;

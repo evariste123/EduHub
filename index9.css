@@ -1,5 +1,5 @@
 body{
-    background-color: #6a6b6b;
+    background-color: #1b1b1b;
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -7,7 +7,7 @@ body{
     position: relative;
     width: 100vw;
     height: 10vh;
-    background-color: #1e0f42;
+    background-color: #6a2ef7;
     justify-items: right;
     justify-self: center;
 }
@@ -45,7 +45,7 @@ body{
     position: relative;
     margin-right: 20px;
     text-decoration: none;
-    color: white;
+    color: #000000;
     cursor: pointer;
     bottom: 20px;
 }
@@ -63,10 +63,11 @@ body{
     margin-left: 20px;
     padding: 10px 10px;
     border-radius: 5px;
+    color: white;
     top: 10px;
     text-align: center;
     box-shadow: 0 0 20px cyan;
-    background-color: #0f8ef7;
+    background-color: #0f2435;
 }
 @media(max-width:600px){
     .logo{
