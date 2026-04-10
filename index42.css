@@ -3,17 +3,17 @@ body{
     padding: 50px 20px;
     max-height: 1200px;
     opacity: 1;
-    background-color: whitesmoke;
+    background:white;
     font-family: Arial, Helvetica, sans-serif;
 }
 .item{
     position: relative;
     justify-self: center;
     padding: 100px 20px;
-    background-color: white;
-    border-radius: 10px;
+    background:linear-gradient(to left,#fff9de,#d0fdfd,#cfccfc);
+    border-radius: 20px;
     opacity: 1;
-    border: 1px solid #d6d4d4;
+    border: 1px solid gold;
     box-shadow:  0 0 rgb(from color r g b);
     box-shadow: 0 0 10px rgb(44, 44, 44);
     cursor: pointer;
@@ -26,18 +26,14 @@ body{
     animation-direction: alternate;
 }
     @keyframes slideIn {
-    0%{
-       transform: translateY(20px) scale(0.8);
+    from{
+       transform: translateY(20px) scale(0.5);
        opacity: 0;
-       float: left;
+       background-color: white;
     }
-    50%{
-        opacity: 0.5;
-        transform: translateY(0) scale(0.5);
-    }
-    100%{
-        transform: translateY(20px) scale(1);
+    to{
         opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
 .h1{
@@ -48,6 +44,11 @@ body{
     font-size: 20px;
     text-transform: capitalize;
     font-weight: 600;
+    color:#221d01;
+    padding: 10px 10px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 119);
 }
 .p{
     position: relative;
@@ -55,6 +56,7 @@ body{
     bottom: 60px;
     font-size: 20px;
     font: bold;
+    color: #252002;
 }
 .item1{
     position: relative;
@@ -65,6 +67,7 @@ body{
     font-size: 17px;
     font: bold;
     font-weight: 900;
+    color: #53028a;
 }
 .item1 input{
     padding: 8px 80px;
@@ -74,10 +77,12 @@ body{
     font-size: 20px;
     font-weight: 500;
     border-top: none;
+    color: black;
     border-radius: 0px;
+    background-color: transparent;
 }
 .item1 input::placeholder{
-    color: black;
+    color: #390ff7;
     cursor: pointer;
     font-size: 20px;
     font-style: italic;
@@ -99,6 +104,7 @@ body{
     font-size: 17px;
     font: bold;
     font-weight: 900;
+    color: #53028a;
 }
 .item2 input{
     padding: 8px 80px;
@@ -109,9 +115,11 @@ body{
     font-weight: 500;
     border-top: none;
     border-radius: 0px;
+    color: black;
+    background-color: transparent;
 }
 .item2 input::placeholder{
-    color: black;
+    color:#2719f1;
     cursor: pointer;
     font-size: 20px;
     font-style: italic;
@@ -129,10 +137,10 @@ body{
     bottom: 30px;
 }
 .item3 label{
-    color: rgb(from color r g b);
     font-size: 17px;
     font: bold;
     font-weight: 900;
+    color: #53028a;
 }
 .item3 select{
     padding: 8px 80px;
@@ -144,9 +152,10 @@ body{
     font-weight: 500;
     border-top: none;
     border-radius: 0px;
+    color: #2719f1;
 }
 .item3 select::placeholder{
-    color: black;
+    color: #2719f1;
     cursor: pointer;
     font-size: 20px;
     font-style: italic;
@@ -158,8 +167,8 @@ body{
     transform: scale(1.02);
     border-bottom: 2px solid darkcyan;
     cursor: pointer;
-    background-color: #000;
-    color: white;
+    background-color:#bcb8f5;
+    color: #030303;
     border-radius: 5px;
 }
 
@@ -168,7 +177,7 @@ body{
     bottom: 20px;
 }
 .item4 label{
-    color: rgb(from color r g b);
+    color: #53028a;
     font-size: 17px;
     font: bold;
     font-weight: 900;
@@ -182,13 +191,7 @@ body{
     font-weight: 500;
     border-top: none;
     border-radius: 0px;
-}
-.item4 input::placeholder{
-    color: black;
-    cursor: pointer;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 500;
+    color: #2719f1;
 }
 .item4 input:hover{
     transition: all ease 0.3s;
@@ -203,7 +206,7 @@ body{
     justify-self: center;
 }
 .item5 label{
-    color: rgb(from color r g b);
+    color: #53028a;
     font-size: 17px;
     font: bold;
     font-weight: 900;
@@ -219,11 +222,13 @@ body{
     font-weight: 500;
     border-top: none;
     border-radius: 0px;
+    color: hsl(0, 0%, 0%);
+    background-color: transparent;
 }
 .item5 textarea::placeholder{
-    color: black;
+    color:#2719f1;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 17px;
     font-style: italic;
     font-weight: 500;
 }
@@ -261,19 +266,20 @@ body{
     margin-right: 0px;
 }
 .item7 button{
-    background-color: #e0c52c;
-    border: 1px solid #f5e9a7;
+    background-color: transparent;
     cursor: pointer;
     border-radius: 5px;
     font-size: 17px;
     padding: 10px 10px;
-    color: black;
+    color: #2719f1;
+    border: none;
 }
 .item7 button:hover{
     transition: all ease-in 0.3s;
     cursor: pointer;
     background-color: #f5e9a7;
     transform: scale(1.03)translateY(-3px);
+    border: 1px solid #f1df77;
 }
 
 /* my responsive design */

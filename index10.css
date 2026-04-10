@@ -3,10 +3,15 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
 }
+@media(max-width:600px){
+    body{
+        background-color: #090a44;
+    }
+}
 .navbar{
     position: relative;
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     background-color: #090a44;
     justify-items: right;
     justify-self: center;
@@ -17,7 +22,7 @@ body{
         background-color: #000000;
         color: white;
         justify-items: right;
-        padding: 20px;
+        padding: 30px;
         flex-wrap: wrap;
     }
 }
@@ -73,6 +78,8 @@ body{
     .logo{
         position: relative;
         justify-self: right;
+        margin-right: 20px;
+        top: 0px;
         width: 15vw;
         height: 6vh;
         overflow-wrap: break-word;
@@ -172,6 +179,7 @@ body{
         background-color: #0e353b;
         border: none;
         justify-self: center;
+        animation-name: none;
     }
 }
 @media(max-width:600px){
@@ -180,6 +188,7 @@ body{
         justify-self: center;
         margin-right: 0px;
         top: 500px;
+        animation-name: none;
     }
 }
 @media(max-width:600px){
@@ -232,7 +241,7 @@ body{
     position: relative;
     width: 30vw;
     height: 40vh;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .image0 img:hover{
     transform: scale(0.91);
@@ -246,9 +255,10 @@ body{
         position: relative;
         margin-left: 0px;
         color: black;
-        background:linear-gradient(to left,teal,darkcyan,indigo) ;
+        background:linear-gradient(to left,#bbfcfc,#aafafa,#e8ccfc) ;
         justify-self: center;
-        top: 0px;
+        top:20px;
+        padding: 120px 20px;
     }
 }
 @media(max-width:600px){
@@ -329,7 +339,7 @@ body{
     position: relative;
     width: 30vw;
     height: 40vh;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .image2 img:hover{
     transform: scale(0.91);
@@ -417,7 +427,7 @@ body{
     position: relative;
     width: 30vw;
     height: 40vh;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .image1 img:hover{
     transform: scale(0.91);
@@ -505,7 +515,7 @@ body{
     position: relative;
     width: 30vw;
     height: 40vh;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .image3 img:hover{
     transform: scale(0.91);
@@ -1169,5 +1179,13 @@ body{
 @media(max-width:600px){
     .social-links{
         display: grid;
+    }
+    .partner-section{
+        background-color: transparent;
+        color: white;
+        position: relative;
+    }
+    .partner-section h2{
+        color: white;
     }
 }

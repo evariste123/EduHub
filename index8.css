@@ -1,5 +1,9 @@
 body{
-    background-color: hsl(195, 87%, 9%);
+    background-image: linear-gradient(rgba(53, 48, 48, 0.5), rgba(71, 60, 77, 0.5)), url('./image/ima.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     font-family: Arial, sans-serif;
     padding: 0;
@@ -8,8 +12,8 @@ body{
     position: relative;
     width: 100vw;
     justify-self: center;
-    padding: 10px;
-    background-color: #202992;
+    height: 10vh;
+    background-color: #424242;
     justify-self: center;
     justify-items: end;
 }
@@ -19,6 +23,7 @@ body{
         width: 90vw;
         justify-items: center;
         justify-self: center;
+        height: 20vh;
     }
 }
 .logo{
@@ -91,16 +96,8 @@ body{
 }
 .card{
     position: relative;
-    top: 20px;
-    width: 90vw;
-    border-radius: 20px;
-    height: auto;
-    border: 1px solid cyan;
+    padding: 20px 20px;
     justify-self: center;
-    background-image: url('./image/ima.jpeg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     animation-duration: 1s;
     animation-name: eva;
     animation-delay: 1;
@@ -127,11 +124,8 @@ body{
 }
 .card1{
     position: relative;
-    justify-self: left;
-    margin-left: 60px;
     top: 0px;
-    width: 50vw;
-    height: auto;
+    padding: 20px 20px;
 }
 .card1 h1{
     position: relative;
@@ -171,18 +165,19 @@ body{
 @media(max-width:600px){
     .card{
         position: relative;
-        width: 85vw;
+        width: 80vw;
         top: 10px;
+        border-radius: 10px;
+        background-color: rgb(104, 102, 102);
     }
 }
 @media(max-width:600px){
     .card1{
         position: relative;
-        width: 80vw;
         justify-self: center;
-        top: 0px;
-        height:135vh;
-        margin-left: 0px;
+        background-color: #585757;
+        border-radius: 5px;
+        box-shadow: rgba(232, 229, 233, 0.5) 0 0 10px;
     }
 }
 @media(max-width:600px){
@@ -232,9 +227,8 @@ body{
 }
 .card3{
     position: relative;
-    width: 80vw;
+    padding: 20px 20px;
     justify-self: center;
-    height: auto;
 }
 .card3 h2{
     position: relative;
@@ -338,9 +332,8 @@ body{
 }
 .item{
      position: relative;
-    width: 80vw;
+    padding: 30px 20px;
     justify-self: center;
-    height: auto;
 }
 .item h2{
     position: relative;
@@ -363,7 +356,7 @@ body{
 }
 .item ul{
     position: relative;
-    top: 20px;
+    top: 0px;
     font: 20px bold;
     font-weight: 500;
     color: hsl(152, 100%, 52%);
@@ -372,16 +365,15 @@ body{
 .item p{
     position: relative;
     overflow-wrap: break-word;
-    top: 0px;
+    bottom: 20px;
     font: 20px bold;
     color: #ffffff;
     font-weight: 500;
 }
 .card5{
     position: relative;
-    width: 90vw;
+    padding: 20px 20px;
     border-radius: 20px;
-    height: auto;
     justify-self: center;
     background-color: #203949;
     border: 1px solid cyan;
@@ -402,7 +394,10 @@ body{
         opacity: 1;
     }
 }
-
+.card6 p{
+    position:relative;
+    bottom: 10px;
+}
 @media(max-width:600px){
     .card5{
         position: relative;
@@ -498,9 +493,8 @@ body{
 }
 .card9{
      position: relative;
-    width: 90vw;
     border-radius: 20px;
-    height: auto;
+    padding: 20px 20px;
     justify-self: center;
     background-color: #1b2c36;
     border: 1px solid cyan;
