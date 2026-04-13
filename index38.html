@@ -157,6 +157,8 @@
             <button type="submit">submit</button>
         </div>
         </form>
+        <div id="messageBox" class="hidden"></div>
+        
         <div class="course">
             <h3>Enrolled Courses</h3>
             <h4>Introduction to Programming</h4>
@@ -202,7 +204,7 @@
         
     </section>
     <section class="footer" id="footer">
-        <div class="card">
+        <div class="card0">
             <h3>Contact Us</h3>
             <p>Email: info@eduhub.com</p>
             <p>Phone: +250 785786547</p>
@@ -233,37 +235,44 @@
         <p>&copy; 2025 EduHub. All rights reserved.</p>
     </section>
     <script>
-        let myform = document.getElementById('myform');
-        myform.addEventListener('submit',(e)=>{
-            e.preventDefault();
+    
+    let myform = document.getElementById('myform');
+let messageBox = document.getElementById('messageBox');
 
-            const fullname = document.getElementById('fullname').value;
-            const studentId = document.getElementById('studentId').value;
-            const program = document.getElementById('program').value;
-          
-            {
-                if(fullname && studentId && program){
-                    setTimeout(()=>{
-                        alert(`
-                        thank you:
-                        1.my full name:${fullname}✅
-                        2.my ID:${studentId}✅
-                        3.my program:${program}✅
+myform.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-        welcome to EduHub website with free knowledge
-                                  platform.
-                        `)
-                    },1000);
-                }
+    const fullname = document.getElementById('fullname').value;
+    const studentId = document.getElementById('studentId').value;
+    const program = document.getElementById('program').value;
 
-                else
-                {
-                    alert('please fill out all the field ❎ and submit again!');
-                }
-            }
+    if (fullname && studentId && program) {
+        // Show a "Processing" state
+        messageBox.innerHTML = "Processing... ⏳";
+        messageBox.className = "success";
 
+        setTimeout(() => {
+            messageBox.innerHTML = `
+            <div class="card">
+                <strong>Thank you!</strong><br>
+                👤 Name: ${fullname} ✅<br>
+                🆔 ID: ${studentId} ✅<br>
+                📚 Program: ${program} ✅<br>
+                <em>Welcome to EduHub!</em>
+                <br>
+                 <button type="button"><a href="./index38.html">close</a></button>
+               </div>
+            `;
             myform.reset();
-        });
+        }, 1000);
+    } else {
+        messageBox.innerHTML = "Please fill out all fields ❎";
+        messageBox.className = "error";
+    }
+    
+    messageBox.classList.remove('hidden');
+});
+
     </script>
     <script src="index38.js"></script>
 </body>
