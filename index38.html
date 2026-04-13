@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EH-PrioritySkills-TME</title>
+    <title>EduHub-priority</title>
     <link rel="stylesheet" href="index38.css">
 </head>
 <body>
@@ -143,15 +143,15 @@
         <form action="" id="myform">
         <div class="form-group">
             <p><strong><label for="full name">Name:</label></strong></p>
-            <input type="text" name="name" id="full name" placeholder="B evariste 'edit names'" required>
+            <input type="text" name="name" id="fullname" placeholder="B evariste 'edit names'" >
         </div>
         <div class="form-group">
             <p><strong><label for="student-id">ID:</label></strong></p>
-            <input type="text" name="student-id" id="student-id" placeholder="12345 'edit codes'" required>
+            <input type="text" name="student-id" id="studentId" placeholder="12345 'edit codes'" >
         </div>
         <div class="form-group">
             <p><strong><label for="program">Program:</label></strong></p>
-            <input type="text" name="program" id="program" placeholder="Engineering 'edit program'" required>
+            <input type="text" name="program" id="program" placeholder="Engineering 'edit program'" >
         </div>
         <div class="button">
             <button type="submit">submit</button>
@@ -232,6 +232,39 @@
         </div> 
         <p>&copy; 2025 EduHub. All rights reserved.</p>
     </section>
+    <script>
+        let myform = document.getElementById('myform');
+        myform.addEventListener('submit',(e)=>{
+            e.preventDefault();
+
+            const fullname = document.getElementById('fullname').value;
+            const studentId = document.getElementById('studentId').value;
+            const program = document.getElementById('program').value;
+          
+            {
+                if(fullname && studentId && program){
+                    setTimeout(()=>{
+                        alert(`
+                        thank you:
+                        1.my full name:${fullname}✅
+                        2.my ID:${studentId}✅
+                        3.my program:${program}✅
+
+        welcome to EduHub website with free knowledge
+                                  platform.
+                        `)
+                    },1000);
+                }
+
+                else
+                {
+                    alert('please fill out all the field ❎ and submit again!');
+                }
+            }
+
+            myform.reset();
+        });
+    </script>
     <script src="index38.js"></script>
 </body>
 </html>

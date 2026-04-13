@@ -8,18 +8,17 @@ body{
     justify-self: center;
     height: auto;
     justify-self: center;
-   background-color: rgb(1, 36, 36);
+   background-color: rgb(255, 255, 255);
 }
 
 .brand{
     position: relative;
-    width: 90vw;
+    width: 100vw;
     height: auto;
     justify-self: center;
-    top: 5px;
-    background-color: rgb(66, 63, 63);
+    top: 0px;
+    background-color: rgb(247, 242, 242);
     border: 1px solid transparent;
-    border-radius: 10px 10px 0 0;
     animation-duration: 2s;
     animation-name: brand;
     animation-delay: 2s;
@@ -149,7 +148,7 @@ body{
     position: relative;
     width: 80vw;
     height: auto;
-    background-color: #1a091b;
+    background-color: #efe9f0;
     margin-left: 20px;
     border-radius: 10px;
     top: 5px;

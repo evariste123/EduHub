@@ -230,16 +230,16 @@
                     }
                 }
                     .home {
-                         background-image: linear-gradient(to bottom, #65468f80, #437786cc),
-                    url('./image/IMG_20251210_164950_618.jpg');
+                         background-image: linear-gradient(to bottom, #f5f4f780, #437786cc),
+                    url('./image2/eduhub.jpg');
                         background-attachment: fixed;
-                        width: 100vw;
+                        width: 95vw;
+                        border-radius: 10px 10px 0 0;
                         height: 70vh;
                         position: relative;
                         background-position: center;
                         background-size: cover;
-                         background-repeat: no-repeat;
-                        border-radius: 8px;
+                        background-repeat: no-repeat;
                         justify-self: center;
                         opacity: 1;
                         text-align: center;
@@ -349,12 +349,12 @@
                         }
                     }
                     .display {
-                        font-size: 2.5rem;
+                        font-size: 20px;
                         font-weight: bold;
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         overflow: hidden;
-                        text-transform: uppercase;
+                        text-transform: capitalize;
                         color: hsl(0, 0%, 1%);
                         text-shadow: 0 0 10px #0affde, 0 0 20px #0affde, 0 0 30px #0affde;
                         text-align: center;
@@ -716,11 +716,11 @@
                                     width: 100px;
                                     height: 100px;
                                     text-align: center;
-                                    animation-duration: 2s;
+                                    animation-duration: 5s;
                                     animation-name: card;
                                     color: black;
                                     animation-direction: alternate;
-                                    animation-delay: 2s;
+                                    animation-delay: 5s;
                                     background-image: url('./image2/africa.jpeg');
                                     animation-iteration-count: infinite;
                                     background-size: cover;
@@ -728,22 +728,23 @@
                                     margin: 20px auto;
                                 }
                                 .card5 span{
-                                    color: hsl(0, 0%, 2%);
+                                    color: hwb(118 2% 0%);
                                     font-size: 20px;
                                     font-weight: bold;
                                 }
                                 @keyframes card{
                                     0%{
-                                        transform: scale(0.1) rotate(0deg);
-                                        opacity: 0;
-                                        color: #3d0046;
+                                        transform: scale(0.8) rotate(0deg);
+                                        opacity: 0.5;
+                                        
+                                        
                                     }
                                     100%{
                                         transform: scale(1) rotate(360deg);
                                         opacity: 1;
-                                        color: #014769;
                                         text-transform: capitalize;
-                                        box-shadow: 0 0 20px rgb(17, 17, 17);
+                                        
+                                        box-shadow: 0 0 200px rgb(255, 255, 255);
                                     }
                                 }   
                                 @media(max-width:600px){
@@ -759,7 +760,7 @@
                                 }
                                 .card5 i{
                                     position: relative;
-                                    top: 40px;
+                                    top: 30px;
                                     color: #ffbb28;
                                     font-weight: 900;
                                 }

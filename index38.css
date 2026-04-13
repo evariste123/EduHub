@@ -220,6 +220,13 @@ font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
+.form-group input:hover{
+    transition: all ease 0.3s;
+    border: 1px solid #2f00ff;
+    cursor: pointer;
+    opacity: 1;
+    transform: translateY(-2px);
+}
 .course {
     margin-top: 20px;
 }
